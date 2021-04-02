@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+::selection{
+    background-color:hsl(184, 100%, 28%);
+}
+a{
+    text-decoration: none;
+    color:hsl(0, 0%, 95%) ;
+}
+.orange-bg{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.orange-txt{
+    color: hsl(31, 77%, 52%);
+}
+
+.teal-bg{
+    background: hsl(184, 100%, 22%);
+}
+.teal-txt{
+    color:  hsl(184, 100%, 22%);
+}
+
+.green-bg{
+    background:hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.green-txt{
+    color: hsl(179, 100%, 13%);
+}
+.container{
+    display: grid;
+    height: 100%;
+    background:hsla(0, 0%, 100%, 0.75) ;
+    place-content:center;
+    place-items: center;
+    margin:5px;
+    margin-bottom:25px;
+}
+
+.cards-wrapper{
+    display: flex;
+    padding:100px 200px;
+    width:920px;
+    background:hsla(0, 0%, 100%, 0.75) ;
+    box-shadow: 0 6px 26px rgb(0 66 65 / 10%);
+    border-radius:5px;
+}
+
+.card{
+
+    color:hsla(0, 0%, 100%, 0.75) ;
+    padding:44px;
+    font-size:15px;
+}
+
+.card-icon{
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: 'Big Shoulders Display', cursive;
+    margin-bottom:20px;
+    color:hsl(0, 0%, 95%);
+}
+
+.card-content{
+     font-family: 'Lexend Deca', sans-serif;
+     margin-bottom: 60px;
+     min-height: 150px;
+     max-height: 150px;
+     line-height: 1.5;
+}
+
+.card-button{
+    margin-bottom:26px;
+}
+.card-button a{
+    padding:12px 24px;
+    background-color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius:50px;
+    transition:all .3s ease-in-out;
+}
+
+.card-button a:hover{
+    background-color: #ffffff00;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 930px) {
+    .container{
+        height: auto;
+    }
+    .cards-wrapper{
+        display: block;
+        width:375px;
+        padding:80px 20px;
+    }
+
+    .orange-bg{
+        border-radius:0;
+    }
+
+    .green-bg{
+        border-radius: 0;
+    }
+  }
